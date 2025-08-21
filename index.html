@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comcast Careers Clone</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+  <div class="logo"></div>
+  <nav>
+    <ul>
+      <li><a href="#">saved job</a></li>
+      <br>
+      <li><a href="currentemploees.html">current employees</a></li>
+      <br>
+      <li><a href="candidates.html">candidates</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="background-img">
+ 
+</div>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <img src= "assets/comcast_logo-removebg-preview.png"="Comcast Logo" class="logo" />
+      <ul>
+        <li id="jobButton"><a href="#">Job Opportunities</a></li>
+        <li id="lifeBtn"><a href="#">Life at Comcast</a ></li>
+        <li id="benefitBtn"><a href="#">Benefits</a></li>
+        <li ><a href="#" id="internshipBtn">Early Career</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="hero">
+      <div class="overlay">
+        <h1>Welcome to comcast</h1>
+        <p>Explore your opportunities with us</p>
+      </div>
+    </div>
+ 
+    <!-- Feedback Button -->
+   <a href="feedback.html"> <button1 class="feedback-btn">Feedback</button1></a>
+  </div> 
+    <section class="hero1">
+  <div class="overlay1">
+    <h2 class="slide-text">Come to Comcast and bring connection to life</h2>
+    <script>
+(function () {
+  // select all elements that should animate
+  const targets = document.querySelectorAll('.slide-text');
+  if (!targets.length) return;
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.25 // element considered visible when 25% in viewport
+  };
+
+  const onIntersect = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        // remove class on exit so the animation replays next time it enters
+        entry.target.classList.remove('show');
+      }
+    });
+  };
+
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(onIntersect, options);
+    targets.forEach(t => obs.observe(t));
+  } else {
+    // fallback for old browsers: simple scroll check
+    function check() {
+      targets.forEach(t => {
+        const rect = t.getBoundingClientRect();
+        const visible = rect.top < window.innerHeight * 0.85 && rect.bottom > window.innerHeight * 0.15;
+        if (visible) t.classList.add('show'); else t.classList.remove('show');
+      });
+    }
+    window.addEventListener('scroll', () => requestAnimationFrame(check));
+    // run once in case element is already visible
+    check();
+  }
+})();
+</script>
+<!--java scripts end-->
+    <div class="search-bar">
+      <input type="text" placeholder="e.g., skills, category, job title">
+      <input type="text" placeholder="Location" list="Location">
+      <datalist id="Location">
+        <option value="ariyalur"></option>
+        <option value="chengalpattu"></option>
+        <option value="chennai"></option>
+        <option value="coimbatore"></option>
+        <option value="cuddalore"></option>
+        <option value="dharmapuri"></option>
+        <option value="dindigul"></option>
+        <option value="erode"></option>
+        <option value="kallakurichi"></option>
+        <option value="kanchipuram"></option>
+        <option value="kanyakumari"></option>
+        <option value="karur"></option>
+        <option value="krishnagiri"></option>
+        <option value="madurai"></option>
+        <option value="mayiladuthurai"></option>
+        <option value="nagapattinam"></option>
+        <option value="namakkal"></option>
+        <option value="nilgiris"></option>
+        <option value="perambalur"></option>
+        <option value="pudukkottai"></option>
+        <option value="ramanathapuram"></option> 
+        <option value="ranipet"></option>
+        <option value="salem"></option>
+        <option value="sivagangai"></option>
+        <option value="tenkasi"></option>
+        <option value="thanjavur"></option>
+        <option value="theni"></option>
+        <option value="thoothukudi"></option>
+        <option value="tiruchirappalli"></option>
+        <option value="tirunelveli"></option>
+        <option value="tirupathur"></option>
+        <option value="tiruppur"></option>
+        <option value="tiruvallur"></option>
+        <option value="tiruvannamalai"></option>
+        <option value="tiruvarur"></option>
+        <option value="vellore"></option>
+        <option value="viluppuram"></option>
+        <option value="virudhunagar"></option>
+</select>
+      </datalist>
+      <select>
+        <option>25 miles</option>
+        <option>50 miles</option>
+        <option>100 miles</option>
+      </select>
+      <button>Search Jobs</button>
+    </div>
+    <p2 style="font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+      We believe you can achieve extraordinary things when you feel connected - 
+      to the work you do and who you do it with. From the platforms we provide 
+      to millions of people, to the content and experiences we create - we bring 
+      our customers, viewers and teammates closer together across the globe.
+    </p2>
+  </div>
+</section>
+<section id="page">
+  <div id="page3" class="cards-container">
+  <div class="card">
+    <img src="assets/bg3.jpg" alt="Analytics">
+    <div class="card-text">
+      <h2>Analytics</h2>
+      <button>See all 11 open roles →</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/computer-engineering.webp" alt="Conductor Engineering">
+    <div class="card-text">
+      <h2>Computer Engineering</h2>
+      <button>See all 107 open roles →</button>
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="assets/Cybersecurity Engineer.jpg" alt="Cyber">
+    <div class="card-text">
+      <h2>Cyber Security</h2>
+      <button>See all roles →</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/web-developer.jpg" alt="Cyber">
+    <div class="card-text">
+      <h2>Web Developer</h2>
+      <button>See all roles →</button>
+    </div>
+  </div>
+   
+  <div class="card">
+    <img src="assets/retail.jpg" alt="Cyber">
+    <div class="card-text">
+      <h2>Retail</h2>
+      <button>See all roles →</button>
+    </div>
+  </div>
+</div>
+</section>
+<script>
+document.getElementById("jobButton").addEventListener("click", function() {
+  document.getElementById("page3").scrollIntoView({ 
+    behavior: "smooth"  // smooth scrolling
+  });
+});
+</script>
+  <section id="lifeSection">
+    <h2>Life @ Comcast</h2>
+  <div class="hid">
+    <p>Embracing good ideas and bringing them to life quickly.</p>
+    <p>Doing the right thing and acting with integrity.</p>
+    <p>Committing to a culture of fairness, respect, and inclusion.</p>
+    <p>Giving back to local communities and organizations.</p>
+  </div>
+  </section>
+<script>
+document.getElementById("lifeBtn").addEventListener("click", function() {
+  let section = document.getElementById("lifeSection");
+
+  // Show section
+  section.classList.add("show");
+
+  // Scroll into view smoothly
+  section.scrollIntoView({ behavior: "smooth" });
+});
+</script>
+
+<div id="slideshow" class="slideshow">
+  <span class="close">&times;</span>
+  <div class="slide fade" style="background-color:greenyellow; position: relative;">
+    <img class="familyimg" src="assets/section5-benefits-home-mobile.png" alt="" style="width: 60%; right: 20px; bottom: 0;">
+    <div class="text" style="color: black;"><h1>Benefit for your life style</h1>
+                       <p>From comprehensive benefits and PTO to <br>
+                        exclusive discounts and perks, we’re there <br>
+                        for you at work and at home</p>
+    
+  </div>
+  </div>
+  <div class="slide fade">
+    <img src="assets/xfinity-products.png" alt="Slide 1" style="background-color: rgb(228, 11, 235); height: 100%;">
+    <div class="text"><h1>Discounted Xfinity Products</h1>
+                       <p>Comcast wants employees to know, enjoy, and promote <br>
+                        the best Xfinity products and services. This program <br>
+                         offers eligible employees discounts on our family <br>
+                         of Xfinity offerings</p>
+    
+    </div>
+  </div>
+  <div class="slide fade" style="position: relative; right: 0;">
+    <img src="assets/section28-benefits.webp" alt="Slide 2">
+    <div class="text" style="color: black; left: 50%;"><h1>Universal Parks Passes</h1 >
+                      <p>Because we're part of the Comcast NBCUniversal family,<br>
+                         full and certain part-time employees receive annual <br>
+                         complimentary tickets to Universal Orlando Resort, <br>
+                         Universal Studios Hollywood, or Universal Studios Japan.</p>
+    </div>
+  </div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+const modal = document.getElementById("slideshow");
+const btn = document.getElementById("benefitBtn");
+const closeBtn = document.querySelector(".close");
+
+btn.onclick = function() {
+  modal.style.display = "block";
+  showSlides(slideIndex);
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+document.querySelector(".prev").onclick = function() {
+  plusSlides(-1);
+}
+document.querySelector(".next").onclick = function() {
+  plusSlides(1);
+}
+
+</script>
+<section>
+ <div class="internship-card hidden" id="internshipCard">
+   <div class="internship-card-content">
+        <div class="slide-in internship-title">Internships</div>
+        <div class="slide-in internship-desc">Spend your summer gaining experience with a Fortune 50 company and create connections for millions of customers nationwide.</div>
+        <div class="internship-features">
+            <div class="slide-in feature">
+                <span class="feature-icon">&#x1F4BC;</span>
+                Summer Employment
+            </div>
+            <div class="slide-in feature">
+                <span class="feature-icon">&#x1F4B0;</span>
+                Competitive Pay
+            </div>
+            <div class="slide-in feature">
+                <span class="feature-icon">&#x1F393;</span>
+                Option For College Credit
+            </div>
+        </div>
+       <a href="assets/Internship-One-Pager-v3.pdf"> <button  class="slide-in factsheet-btn" >See the Facts Sheet &rarr;</button></a>
+      </div>
+ </div>
+</section>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('internshipBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const card = document.getElementById('internshipCard');
+        card.classList.remove('hidden');
+        // Smooth scroll to the card 
+       card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+       
+        // Slide-in animation
+        const elements = card.querySelectorAll('.slide-in');
+        elements.forEach(function(el, idx) {
+            setTimeout(function() {
+                el.classList.add('visible');
+            }, 400 + idx * 200);
+        });
+    });
+});
+</script>
+
+<section class="jobs-section">
+  <p class="jobs-intro">No matter what makes you tick, there's a place for you on our team.</p>
+  <button class="all-roles-btn">Explore All Roles</button>
+
+  <h2>Jobs For You</h2>
+
+  <div class="jobs-tabs">
+    <button class="tab active">Featured Jobs</button>
+    <button class="tab">Recently Viewed Jobs</button>
+    <button class="tab">Saved Jobs</button>
+  </div>
+
+  <div class="job-list">
+    <div class="job-card">
+      <h3>Security Engineer 4</h3>
+      <p>Chennai, Tamil Nadu | Cybersecurity | 08/13/2025</p>
+    </div>
+
+    <div class="job-card">
+      <h3>Engineer 3 - Engineering Operations</h3>
+      <p>Chennai, Tamil Nadu | Engineering | 08/13/2025</p>
+    </div>
+
+    <div class="job-card">
+      <h3>Xfinity Retail Sales Consultant</h3>
+      <p>Hillsboro, Oregon | Retail | 07/31/2025</p>
+    </div>
+  </div>
+
+  <div class="social-icons">
+   <a href="https://www.facebook.com/comcast/" class="icon"><i class="fab fa-facebook-f"></i></a>
+   <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+   <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+   <a href="https://www.youtube.com/@ComcastCareers" class="icon"><i class="fab fa-youtube"></i></a>
+   <a href="https://www.instagram.com/comcast/?hl=en" class="icon"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h3>COMCAST CAREERS</h3>
+      <ul>
+        <li><a href="#">Job Opportunities</a></li>
+        <li><a href="#">Life @ Comcast</a></li>
+        <li><a href="#">Benefits</a></li>
+        <li><a href="#">Early Career</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Search Jobs</a></li>
+        <li><a href="#">Talent Community</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>OTHER CAREER OPTIONS AT COMCAST</h3>
+      <ul>
+        <li><a href="#">NBCUniversal Careers</a></li>
+        <li><a href="#">Universal Studios Hollywood Careers</a></li>
+        <li><a href="#">Universal Studios Orlando Careers</a></li>
+        <li><a href="#">Sky Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>COMCAST CORPORATE</h3>
+      <ul>
+        <li><a href="#">Comcast Corporate</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Terms</a>
+    <a href="#">Candidate Privacy</a>
+    <a href="#">Comcast Policy on EEO</a>
+    <a href="#">Do Not Sell My Personal Information</a>
+    <a href="#">Motion Settings</a>
+    <a href="#">Sitemap</a>
+  </div>
+
+  <div class="footer-disclaimer">
+    Comcast is proud to be an equal opportunity workplace. We will consider all qualified applicants for employment 
+    without regard to race, color, religion, age, sex, sexual orientation, gender identity, national origin, disability, 
+    veteran status, genetic information, or any other basis protected by applicable law. Comcast endeavors to make our 
+    career site accessible to any and all users. If you would like to contact us regarding accommodations for any part 
+    of the application or interview process, please contact <a href="mailto:TalentAccommodations@comcast.com">TalentAccommodations@comcast.com</a>. 
+    Any inquiries regarding employment application status, resume submittal, open positions and any other general inquiries 
+    will not receive a response so please visit our <a href="#">FAQ</a> page for more information. Comcast participates in the 
+    E-VERIFY PROGRAM in our hiring practices to achieve a lawful workforce. Comcast is a drug-free workplace.
+  </div>
+
+  <div class="footer-bottom">
+    Cookie Preferences
+  </div>
+</footer>  
+
+ <script src="script.js"></script>
+</body>
+</html>
